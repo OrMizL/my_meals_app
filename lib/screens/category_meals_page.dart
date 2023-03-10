@@ -22,7 +22,7 @@ class CategoryMealsPage extends StatelessWidget {
       body: ListView.builder(
         itemBuilder: (context, index) {
           return MealItem(
-            title: title,
+            title: categoryMeals[index].title,
             imageUrl: categoryMeals[index].imageUrl,
             duration: categoryMeals[index].duration,
             complexity: categoryMeals[index].complexity,
