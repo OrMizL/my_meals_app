@@ -13,7 +13,7 @@ class CategoryItem extends StatelessWidget {
     this.color,
   );
 
-  void categoryClick(BuildContext ctx) {
+  void selectCategory(BuildContext ctx) {
     Navigator.of(ctx).push(
       MaterialPageRoute(
         builder: (_) {
@@ -26,7 +26,7 @@ class CategoryItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => categoryClick(context),
+      onTap: () => selectCategory(context),
       splashColor: Theme.of(context).colorScheme.secondary,
       borderRadius: BorderRadius.circular(15),
       child: Container(
