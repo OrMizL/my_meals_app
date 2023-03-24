@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
       ),
-      home: TabsScreen(),
+      home: TabsPage(),
     );
   }
 }

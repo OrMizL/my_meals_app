@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
+import '../widgets/main_drawer.dart';
 
 import './categories_page.dart';
 import './favorites_page.dart';
 
-class TabsScreen extends StatefulWidget {
-  const TabsScreen({Key key}) : super(key: key);
+class TabsPage extends StatefulWidget {
+  const TabsPage({Key key}) : super(key: key);
 
   @override
-  State<TabsScreen> createState() => _TabsScreenState();
+  State<TabsPage> createState() => _TabsPageState();
 }
 
-class _TabsScreenState extends State<TabsScreen> {
+class _TabsPageState extends State<TabsPage> {
   final List<Map<String, Object>> _pages = [
     {
       'page': CategoriesPage(),
@@ -36,6 +37,7 @@ class _TabsScreenState extends State<TabsScreen> {
       appBar: AppBar(
         title: Text(_pages[_selectedPageIndex]['title']),
       ),
+      drawer: MainDrawer(),
       body: _pages[_selectedPageIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectPage,
