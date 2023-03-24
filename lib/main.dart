@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import './screens/categories_page.dart';
+import './screens/tabs_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -39,7 +38,7 @@ class MyApp extends StatelessWidget {
               ),
             ),
       ),
-      home: CategoriesPage(),
+      home: TabsScreen(),
     );
   }
 }
