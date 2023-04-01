@@ -1,16 +1,18 @@
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
-
 import 'package:flutter/material.dart';
+
+import '../widgets/main_drawer.dart';
 
 class FiltersPage extends StatelessWidget {
   const FiltersPage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text('Filters!'),
+    return Scaffold(
+      appBar: AppBar(title: Text('Filters Page')),
+      drawer: MainDrawer(),
+      body: Center(
+        child: Text('Filters!'),
+      ),
     );
   }
 }

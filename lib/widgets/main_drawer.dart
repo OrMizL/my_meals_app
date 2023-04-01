@@ -51,7 +51,7 @@ class MainDrawer extends StatelessWidget {
             'Meals',
             Icons.restaurant,
             () => {
-              Navigator.of(context).push(
+              Navigator.of(context).pushReplacement(
                 MaterialPageRoute(
                   builder: (_) {
                     return TabsPage();
@@ -64,7 +64,7 @@ class MainDrawer extends StatelessWidget {
             'Filters',
             Icons.filter_alt,
             () => {
-              Navigator.of(context).push(
+              Navigator.of(context).pushReplacement(
                 MaterialPageRoute(
                   builder: (_) {
                     return FiltersPage();
